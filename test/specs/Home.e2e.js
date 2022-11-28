@@ -75,6 +75,15 @@ describe('My Login application', () => {
         await expect(InventoryPage.thankYouMessage).toHaveText("THANK YOU FOR YOUR ORDER");
         await InventoryPage.backToProducts.click();
     });
+    it('should have href of twitter page', async () => {
+        await expect(InventoryPage.twitterBtn).toHaveHref('https://twitter.com/saucelabs');
+    });
+    it('should have href of facebook page', async () => {
+        await expect(InventoryPage.facebookBtn).toHaveHref('https://www.facebook.com/saucelabs');
+    });
+    it('should have href of linkedin page', async () => {
+        await expect(InventoryPage.linkedinBtn).toHaveHref('https://www.linkedin.com/company/sauce-labs/');
+    });
     it('should go to about page', async () => {
         await InventoryPage.btnBurger.waitForDisplayed();
         await InventoryPage.btnBurger.click();

@@ -79,6 +79,18 @@ class InventoryPage {
     get thankYouMessage () {
         return $('//*[@id="checkout_complete_container"]/h2')
     }
+
+    get twitterBtn () {
+        return $('//*[@id="page_wrapper"]/footer/ul/li[1]/a')
+    }
+
+    get facebookBtn () {
+        return $('//*[@id="page_wrapper"]/footer/ul/li[2]/a')
+    }
+
+    get linkedinBtn () {
+        return $('//*[@id="page_wrapper"]/footer/ul/li[3]/a')
+    }
 }
 
 export default new InventoryPage();
