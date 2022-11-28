@@ -7,6 +7,10 @@ class InventoryPage {
     get btnLogout () {
         return $('#logout_sidebar_link')
     }
+
+    get btnAbout () {
+        return $('#about_sidebar_link')
+    }
     
     get inventoryImg () {
         return $('#item_4_img_link > img')
@@ -68,8 +72,13 @@ class InventoryPage {
         return $('#postal-code')
     }
 
-    
+    get finishPurchaseButton () {
+        return $('#finish')
+    }
 
+    get thankYouMessage () {
+        return $('//*[@id="checkout_complete_container"]/h2')
+    }
 }
 
 export default new InventoryPage();
