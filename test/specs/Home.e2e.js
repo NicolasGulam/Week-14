@@ -42,29 +42,29 @@ describe('My Login application', () => {
     it('Should change filter button Name (Z to A)', async () => {
         await InventoryPage.btnFilters.waitForDisplayed();
         await InventoryPage.btnFilters.click();
-        await InventoryPage.OptionFilerNameZA.waitForDisplayed();
-        await InventoryPage.OptionFilerNameZA.click();
+        await InventoryPage.optionFilterNameZA.waitForDisplayed();
+        await InventoryPage.optionFilterNameZA.click();
         await expect(InventoryPage.filtersText).toHaveText('NAME (Z TO A)');
     });
     it('Should change filter button Price (low to high)', async () => {
         await InventoryPage.btnFilters.waitForDisplayed();
         await InventoryPage.btnFilters.click();
-        await InventoryPage.OptionFilerNameLowHigh.waitForDisplayed();
-        await InventoryPage.OptionFilerNameLowHigh.click();
+        await InventoryPage.optionFilterNameLowHigh.waitForDisplayed();
+        await InventoryPage.optionFilterNameLowHigh.click();
         await expect(InventoryPage.filtersText).toHaveText('PRICE (LOW TO HIGH)');
     });
     it('Should change filter button Price (high to low)', async () => {
         await InventoryPage.btnFilters.waitForDisplayed();
         await InventoryPage.btnFilters.click();
-        await InventoryPage.OptionFilerNameHighLow.waitForDisplayed();
-        await InventoryPage.OptionFilerNameHighLow.click();
+        await InventoryPage.optionFilterNameHighLow.waitForDisplayed();
+        await InventoryPage.optionFilterNameHighLow.click();
         await expect(InventoryPage.filtersText).toHaveText('PRICE (HIGH TO LOW)');
     });
     it('Should change filter button Name (A to Z)', async () => {
         await InventoryPage.btnFilters.waitForDisplayed();
         await InventoryPage.btnFilters.click();
-        await InventoryPage.OptionFilerNameAZ.waitForDisplayed();
-        await InventoryPage.OptionFilerNameAZ.click();
+        await InventoryPage.optionFilterNameAZ.waitForDisplayed();
+        await InventoryPage.optionFilterNameAZ.click();
         await expect(InventoryPage.filtersText).toHaveText('NAME (A TO Z)');
     });
     it('Purchase path go to step one checkout but show name error', async () => {

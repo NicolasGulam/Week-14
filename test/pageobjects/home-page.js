@@ -20,19 +20,19 @@ class InventoryPage {
         return $('.product_sort_container')
     }
 
-    get OptionFilerNameAZ () {
+    get optionFilterNameAZ () {
         return $('//*[@id="header_container"]/div[2]/div[2]/span/select/option[1]')
     }
 
-    get OptionFilerNameZA () {
+    get optionFilterNameZA () {
         return $('//*[@id="header_container"]/div[2]/div[2]/span/select/option[2]')
     }
 
-    get OptionFilerNameLowHigh () {
+    get optionFilterNameLowHigh () {
         return $('//*[@id="header_container"]/div[2]/div[2]/span/select/option[3]')
     }
 
-    get OptionFilerNameHighLow () {
+    get optionFilterNameHighLow () {
         return $('//*[@id="header_container"]/div[2]/div[2]/span/select/option[4]')
     }
     
