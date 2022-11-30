@@ -11,6 +11,30 @@ class InventoryPage {
     get btnAbout () {
         return $('#about_sidebar_link')
     }
+
+    get filtersText () {
+        return $('.active_option')
+    }
+
+    get btnFilters () {
+        return $('.product_sort_container')
+    }
+
+    get OptionFilerNameAZ () {
+        return $('//*[@id="header_container"]/div[2]/div[2]/span/select/option[1]')
+    }
+
+    get OptionFilerNameZA () {
+        return $('//*[@id="header_container"]/div[2]/div[2]/span/select/option[2]')
+    }
+
+    get OptionFilerNameLowHigh () {
+        return $('//*[@id="header_container"]/div[2]/div[2]/span/select/option[3]')
+    }
+
+    get OptionFilerNameHighLow () {
+        return $('//*[@id="header_container"]/div[2]/div[2]/span/select/option[4]')
+    }
     
     get inventoryImg () {
         return $('#item_4_img_link > img')
